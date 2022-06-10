@@ -73,16 +73,27 @@ Array.prototype.myMap = function(callbackFn) {
   
   // LASTINDEXOF //
   Array.prototype.myLastIndexOf = function(searchElement) {
-    // Place your code here.
+    for (let i = this.length - 1; i > -1; i--) {
+      if (this[i] == searchElement) {return i;}
+    }
+    return -1;
   };
   
   // KEYS //
   Object.myKeys = function(object) {
-    // Place your code here.
+    let keyArr = [];
+    for (var key in object){
+      keyArr.push(key);
+    }
+    return keyArr;
   };
   
   // VALUES //
   Object.myValues = function(object) {
-    // Place your code here.
+    let varArr = [];
+    for (var key in object){
+      varArr.push(object[key]);
+    }
+    return varArr;
   };
   
