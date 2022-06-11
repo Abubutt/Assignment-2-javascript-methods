@@ -1,8 +1,12 @@
-// MAP //
-Array.prototype.myMap = function (callbackFn) {
-  this.forEach((element, index) => {
-    this[index] = callbackFn(element);
-  });
+// MAP // update myMap (test was givin undefined)
+Array.prototype.myMap = function(callbackFn) {
+  const arr = [];
+  for( let i = 0; i < this.length; i++){ 
+      if(this[i] === undefined) {continue;} 
+      //add the new values in the array
+      arr[i] = callbackFn(this[i],i, this); 
+  }
+  return arr;
 };
 
 // FILTER //
@@ -18,16 +22,14 @@ Array.prototype.myFilter = function (callbackFn) {
 
 };
 
-// SOME //
-Array.prototype.mySome = function (callbackFn) {
-  // Place your code here.
-  this.forEach(element => {
-    if (callbackFn(element)) {
-      return true;
-    }
-  });
+// SOME // update myMap (test was givin false)
+Array.prototype.mySome = function(callBack) {
+  for (let element of this) {
+      if (callBack(element))
+          return true;
+  }
   return false;
-};
+}
 
 // EVERY //
 Array.prototype.myEvery = function (callbackFn) {
@@ -95,3 +97,9 @@ Object.myValues = function (object) {
   }
   return varArr;
 };
+
+
+
+
+
+ 
