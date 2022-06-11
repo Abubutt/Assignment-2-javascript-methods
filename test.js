@@ -38,20 +38,21 @@ console.log('myIndex: ', beasts.indexOf('bison')); // 1
 
 //myLastIndexOf
 const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
-console.log('myLastIndexOf: ', animals.lastIndexOf('Dodo')); //3
+console.log('myLastIndexOf: ', animals.myLastIndexOf('Dodo')); //3
 
 //myKey
-const array3 = ['a', 'b', 'c'];
-const it = array3.keys();
-console.log('myKey: '); 
-for (const key of it) {
-  console.log(key); // 0  1  2
-}
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+  };
+  
+  console.log('myKey: ', Object.keys(object1)); // ["a", "b", "c"]
 
 //myValues
-const array4 = ['a', 'b', 'c'];
-const iterator = array4.values();
-console.log('myValues: '); 
-for (const value of iterator) {
-  console.log(value); // a  b  c
-}
+const object2 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+  };
+  console.log('myValues: ',Object.values(object2)); //["somestring", 42, false]
