@@ -15,7 +15,7 @@ const even = (element) => element % 2 === 0;
 console.log('mySome: ', array.mySome(even)); //true
 
 //test myEvery
-const isBelowThreshold = (currentValue) => currentValue < 20;
+const isBelowThreshold = (currentValue) => currentValue < 40;
 const arr = [1, 30, 39, 29, 10, 13];
 console.log('myEvery: ',arr.every(isBelowThreshold)); // true
 
