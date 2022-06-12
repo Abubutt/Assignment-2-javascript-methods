@@ -1,8 +1,10 @@
 // MAP //
 Array.prototype.myMap = function(callbackFn) {
+    let result = []
     this.forEach((element,index) => {
-      this[index] = callbackFn(element);
+      result.push(callbackFn(element));
     });
+    return result;
   };
   
   // FILTER //
