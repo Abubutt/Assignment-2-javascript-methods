@@ -17,7 +17,7 @@ console.log('mySome: ', array.mySome(even)); //true
 //test myEvery
 const isBelowThreshold = (currentValue) => currentValue < 40;
 const arr = [1, 30, 39, 29, 10, 13];
-console.log('myEvery: ',arr.every(isBelowThreshold)); // true
+console.log('myEvery: ',arr.myEvery(isBelowThreshold)); // true
 
 // myReduce
 const array2 = [1, 2, 3, 4];
@@ -30,11 +30,11 @@ console.log('myReduce: ',sumWithInitial); // 10
 
 // myInclude
 const pets = ['cat', 'dog', 'bat'];
-console.log('myInclude: ',pets.includes('cat')); // true
+console.log('myInclude: ',pets.mYIncludes('cat')); // true
 
 //myIndex 
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
-console.log('myIndex: ', beasts.indexOf('bison')); // 1
+console.log('myIndex: ', beasts.myIndexOf('bison')); // 1
 
 //myLastIndexOf
 const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
@@ -47,7 +47,7 @@ const object1 = {
     c: false
   };
   
-  console.log('myKey: ', Object.keys(object1)); // ["a", "b", "c"]
+  console.log('myKey: ', Object.myKeys(object1)); // ["a", "b", "c"]
 
 //myValues
 const object2 = {
@@ -55,4 +55,4 @@ const object2 = {
     b: 42,
     c: false
   };
-  console.log('myValues: ',Object.values(object2)); //["somestring", 42, false]
+  console.log('myValues: ',Object.myValues(object2)); //["somestring", 42, false]
