@@ -32,9 +32,14 @@ Array.prototype.mySome = function(callBack) {
 }
 
 // EVERY // I cleaned the code
-Array.prototype.myEvery = function (callbackFn) {
+Array.prototype.myEvery = function(callbackFn) {
   // Place your code here.
-  this.forEach(element =>(callbackFn(element) == true));
+  this.forEach(element => {
+    if(callbackFn(element) == false){
+      return false;
+    }
+  });
+  return true;
 };
 
 // REDUCE //

@@ -30,7 +30,7 @@ console.log('myReduce: ',sumWithInitial); // 10
 
 // myInclude
 const pets = ['cat', 'dog', 'bat'];
-console.log('myInclude: ',pets.mYIncludes('cat')); // true
+console.log('myInclude: ',pets.myIncludes('cat')); // true
 
 //myIndex 
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
